@@ -4,6 +4,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+scrollbar {
+    overflow-y: hidden;
+}
+
 header {
     height: 60vh;
     background: url(/assets/img/Illustration-abstrait.webp) no-repeat;
@@ -50,23 +54,22 @@ nav > img {
 }
 
 #presentation {
-    font-size: 20px;
+    font-size: 15px;
     height: 55vh;
     color: white;
-    display: flex;
-    align-items: center;
-    padding: 0 5vw 0 5vw;
+    
+}
+
+#presentation > h2 {
+    
+    font-size: 15px;
     
 }
 
 
-#presentation > h2 {
-    align-self: flex-end;
-    font-size: 15px;
-}
-
-
-main {
-    height: 200px;
-    background-color: blue;
+#alerte {
+    background-color: #4FAECC;
+    color: white;
+    font-size: 14.5px;
+    padding: 2%;
 }
