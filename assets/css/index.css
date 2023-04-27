@@ -4,12 +4,12 @@
     font-family: 'Inter', sans-serif;
 }
 
-scrollbar {
+/* scrollbar {
     overflow-y: hidden;
-}
+} */
 
 header {
-    height: 60vh;
+    height: 50vh;
     background: url(/assets/img/Illustration-abstrait.webp) no-repeat;
     background-size: 80vh;
 }
@@ -48,24 +48,46 @@ nav > img {
     margin: 5px;
 }
 
-.menuBurger {
-    display: none;
-    /* display: flex; */
+#menuBurger {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    text-align: center;
+    text-decoration: overline;
+    text-transform: uppercase;
+    top: 7vh;
+    border-radius: 0 0 25px 25px;
 }
 
+#menuBurger li {
+    padding: 2%;
+}
+
+
+
+
+
 #presentation {
-    font-size: 15px;
-    height: 55vh;
     color: white;
-    
+    padding: 8%;
+}
+
+#presentation > h1 {
+    font-size: 25px;
+    /* margin-top: 38%; */
+    margin-top: 11.5vh;
+    padding: 15px;
+    border: white dashed 2px;
+    border-radius: 25px;
+    width: 200px;
 }
 
 #presentation > h2 {
-    
-    font-size: 15px;
-    
+    font-size: 17px;
+    /* margin-top: 40%; */
+    margin-top: 110px;
+    text-align: right;
 }
-
 
 #alerte {
     background-color: #4FAECC;
@@ -73,3 +95,4 @@ nav > img {
     font-size: 14.5px;
     padding: 2%;
 }
+
