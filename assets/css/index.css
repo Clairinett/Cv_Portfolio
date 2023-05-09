@@ -105,6 +105,7 @@ mark {
 
 main {
     height: 100vh;
+    width: 100%;
     background: url(/assets/img/backgroundpois.png) scroll center;
     background-size: 70vh;
 }
@@ -117,6 +118,86 @@ main {
     background-color: #4FAECC;
     padding: 2%;
 }
+
+
+#courriers {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#enveloppeCv {
+    height: 200Px;
+    width: 300px;
+    background-color: #DAA14C;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.lettre {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 15px;
+    z-index: 2;
+}
+
+.lettre > p {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 30px;
+    color: black;
+}
+
+.enveloppe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 100px solid transparent;
+    border-right: 150px solid #EBEFF1;
+    border-bottom: 100px solid #EBEFF1;
+    border-left: 150px solid #EBEFF1;
+    z-index: 3
+}
+
+.plis {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 150px solid #EBEFF1;
+    border-bottom: 100px solid #EBEFF1;
+    border-left: 150px solid #EBEFF1;
+    transform-origin: top;
+}
+
+.plis.Un {
+    border-top: 100px solid #DAA14C;
+    transform: rotateX(0deg);
+    z-index: 3;
+}
+
+.plis.Deux {
+    border-top: 100px solid #DAA14C;;
+    transform: rotateX(90deg);
+    z-index: 1;
+}
+
+#enveloppeCv:hover .plis.Un{
+    transform: rotateX(90deg);
+}
+
+#enveloppeCv:hover .plis.Deux {
+    transform: rotateX(180deg);
+}
+
 
 footer {
     background-color: #4FAECC;
@@ -134,3 +215,6 @@ footer > a:visited, footer > a{
     text-transform: uppercase;
     font-size: 0.85rem;
 }
+
+
+
