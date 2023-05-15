@@ -20,3 +20,55 @@ iconBurger.addEventListener('click', ()=>{
         hidden = true;
     };
 });
+
+
+
+
+const enveloppeCv = document.getElementById('enveloppeCv');
+const enveloppePortfolio = document.getElementById('enveloppePortfolio');
+const secCv = document.getElementById('cv');
+const secPortfolio = document.getElementById('portfolio');
+
+let afficherCv = true;
+let afficherPo = true;
+
+secCv.style.display = "none";
+secPortfolio.style.display = "none";
+
+
+enveloppeCv.addEventListener('click', ()=> {
+    if (afficherCv) {
+        secPortfolio.style.display = "none";
+        secCv.style.display = "initial";
+        afficherCv = false;
+        afficherPo = true;
+    }
+    else {
+        secCv.style.display = "none";
+        afficherCv = true
+    }
+
+})
+
+enveloppePortfolio.addEventListener('click', ()=> {
+    if (afficherPo) {
+        secPortfolio.style.display = "initial";
+
+        secCv.style.display = "none";
+        afficherPo = false;
+        afficherCv = true;
+
+    }
+    else {
+        secPortfolio.style.display = "none";
+        afficherPo = true
+
+    }
+});
+
+
+
+// .addEventListener('click', ()=> {
+//     secCv.style.display = "none";
+//     secPortfolio.style.display = "none";
+// })

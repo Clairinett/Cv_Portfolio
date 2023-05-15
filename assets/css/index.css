@@ -8,10 +8,6 @@
     font-weight: 700;
 }
 
-/* scrollbar {
-    overflow-y: hidden;
-} */
-
 header {
     height: 50vh;
     background: url(/assets/img/Illustration-abstrait.webp) no-repeat center;
@@ -118,7 +114,6 @@ main {
     background-color: #4FAECC;
     padding: 2%;
 }
-
 
 #courriers {
     height: 100vh;
@@ -245,6 +240,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     border-radius: 25px 25px 0 0;
+    
 }
 
 footer > a:visited, footer > a{
@@ -255,5 +251,22 @@ footer > a:visited, footer > a{
     font-size: 0.85rem;
 }
 
+#competence {
+    background-color: #0B1A3C;
+    padding: 3%;
+    
+}
+
+#front, #back, #outils {
+    background-color: white;
+    border-radius: 25px;
+    
+}
 
 
+
+
+
+#portfolio {
+    background-color: red;
+}
