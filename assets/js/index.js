@@ -29,6 +29,8 @@ const enveloppePortfolio = document.getElementById('enveloppePortfolio');
 const secCv = document.getElementById('cv');
 const secPortfolio = document.getElementById('portfolio');
 
+const main = document.querySelector('main');
+
 let afficherCv = true;
 let afficherPo = true;
 
@@ -42,10 +44,12 @@ enveloppeCv.addEventListener('click', ()=> {
         secCv.style.display = "initial";
         afficherCv = false;
         afficherPo = true;
+        main.style.height = "250vh"
     }
     else {
         secCv.style.display = "none";
         afficherCv = true
+        main.style.height = "110vh"
     }
 
 })
@@ -53,22 +57,22 @@ enveloppeCv.addEventListener('click', ()=> {
 enveloppePortfolio.addEventListener('click', ()=> {
     if (afficherPo) {
         secPortfolio.style.display = "initial";
-
         secCv.style.display = "none";
         afficherPo = false;
         afficherCv = true;
+        main.style.height = "250vh"
 
     }
     else {
         secPortfolio.style.display = "none";
         afficherPo = true
+        main.style.height = "110vh"
 
     }
 });
 
-
-
-// .addEventListener('click', ()=> {
+// main.addEventListener('click', ()=> {
 //     secCv.style.display = "none";
 //     secPortfolio.style.display = "none";
+//     main.style.height = "110vh"
 // })
